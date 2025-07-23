@@ -1,58 +1,45 @@
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: sans-serif;
   background-color: #fff0f5;
-  color: #4b3f49;
-  padding: 2rem;
-  text-align: center;
+  color: #333;
+  padding: 20px;
 }
 
 h1 {
-  color: #d36ba6;
-  margin-bottom: 2rem;
+  text-align: center;
+  color: #a052aa;
 }
 
 .ciclo {
-  margin-bottom: 3rem;
-  border: 2px dashed #f8c8dc;
-  padding: 1.5rem;
-  border-radius: 15px;
-  background-color: #fffafc;
-}
-
-.ciclo h2 {
-  color: #bf4080;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
+  border: 2px dashed #e3a0e3;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .cursos {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
 }
 
 .boton-curso {
-  padding: 0.7rem 1.3rem;
+  background-color: #ffc0cb;
   border: none;
-  border-radius: 20px;
-  background-color: #f8a5c2;
-  color: white;
-  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .boton-curso:hover {
-  background-color: #f78fb3;
-}
-
-.boton-curso:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+  background-color: #ffb6c1;
 }
 
 .boton-curso.aprobado {
-  background-color: #b185c9 !important;
+  background-color: #dda0dd;
   text-decoration: line-through;
-  opacity: 0.8;
+  color: white;
 }
