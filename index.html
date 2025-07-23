@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla de Psicología</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #fffafc;
+      margin: 20px;
+    }
+    h2 {
+      color: #b85fc6;
+    }
+    .ciclo {
+      margin-bottom: 30px;
+    }
+    .curso {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 12px;
+      background-color: #f9c6e9; /* rosa pastel */
+      cursor: pointer;
+      user-select: none;
+      transition: 0.2s;
+    }
+    .curso:hover {
+      opacity: 0.8;
+    }
+    .aprobado {
+      background-color: #cda3f0; /* morado pastel */
+      text-decoration: line-through;
+      color: #5c486b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Malla Interactiva - Psicología</h1>
+  <div id="contenedor"></div>
 
+  <script>
+    const malla = [
+      ["Globalización y Realidad Nacional", "Ciudadanía y Ética", "Antropología Social", "Pensamiento Crítico", "Pre Cálculo", "Psicología: Historia y Sistemas", "Administración General", "Taller: Desarrollo de Competencias Personales I"],
+      ["Comunicación y Literatura I", "Análisis de Datos I", "Matemática para Ciencias Sociales", "Psicología del Desarrollo Humano I", "Neurociencias I", "Fundamentos de Marketing", "Electivo I", "Taller: Desarrollo de Competencias Profesionales I"],
+      ["Comunicación y Literatura II", "Ética y Deontología Psicológica", "Neurociencias II", "Psicología Cognitiva y del Aprendizaje", "Psicología de la Personalidad", "Psicología del Desarrollo Humano II", "Estadística y Probabilidades", "Taller: Desarrollo de Competencias Personales II"],
+      ["Psicología Educativa", "Psicología Clínica", "Psicología Organizacional", "Psicología Social", "Comportamiento Humano en las Organizaciones", "Procesos Creativos", "Electivo II", "Taller: Desarrollo de Competencias Profesionales II"],
+      ["Filosofía y Ética", "Interculturalidad, Diversidad y Psicología", "Percepción y Comunicación", "Comportamiento del Consumidor", "Gestión de Capital Humano", "Contabilidad General", "Metodología de la Investigación"],
+      ["Teorías Psicodinámicas", "Teoría de la Motivación y Emoción", "Técnicas de Observación y Entrevista Psicológica", "Procesos Psicopatológicos", "Psicología Humanista y Existencialista", "Electivo III", "Electivo IV", "Taller: Desarrollo de Competencias Profesionales III"],
+      ["Positive and Health Psychology", "Investigación Cualitativa", "Principios de Evaluación, Pruebas de Inteligencia y de procesos cognitivos", "Familia: Modelos teóricos y áreas de intervención", "Electivo V", "Electivo VI", "Estadística Inferencial", "Taller: Desarrollo de Competencias Personales IV"],
+      ["Investigación Cuantitativa", "Pruebas de Personalidad y Constructos del Yo", "Análisis de Datos II", "Planeación Estratégica", "Electivo VII", "Electivo VIII", "Electivo IX", "Electivo I Internacional", "Taller: Desarrollo de Competencias Profesionales IV"],
+      ["Intervención psicológica en Emergencias y Desastres", "Construcción y Adaptación de Pruebas", "Práctica Preprofesional I", "Trabajo de Tesis I", "Electivo X", "Electivo XI", "Electivo II Internacional", "Taller: Desarrollo de Competencias Personales V"],
+      ["Programas de Promoción y Prevención para el Bienestar Humano", "Salud Mental Comunitaria, Consejería e Intervención Psicológica", "Entrepreneurship", "Práctica Preprofesional II", "Trabajo de Tesis II", "Electivo XII", "Electivo XIII", "Taller: Desarrollo de competencias profesionales V"]
+    ];
+
+    const contenedor = document.getElementById("contenedor");
+    const aprobados = new Set(JSON.parse(localStorage.getItem("cursos_aprobados") || "[]"));
+
+    malla.forEach((ciclo, i) => {
+      const div = document.createElement("div");
+      div.className = "ciclo";
+      div.innerHTML = `<h2>Ciclo ${i + 1}</h2>`;
+      ciclo.forEach(curso => {
+        const btn = document.createElement("div");
+        btn.className = "curso";
+        btn.textContent = curso;
+        if (aprobados.has(curso)) btn.classList.add("aprobado");
+        btn.onclick = () => {
+          btn.classList.toggle("aprobado");
+          if (btn.classList.contains("aprobado")) {
+            aprobados.add(curso);
+          } else {
+            aprobados.delete(curso);
+          }
+          localStorage.setItem("cursos_aprobados", JSON.stringify([...aprobados]));
+        };
+        div.appendChild(btn);
+      });
+      contenedor.appendChild(div);
+    });
+  </script>
+</body>
+</html>
