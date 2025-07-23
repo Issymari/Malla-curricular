@@ -1,57 +1,69 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
-  color: #4a148c;
-  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f5;
+  color: #4b2840;
+  padding: 40px 20px;
+  margin: 0;
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  color: #880e4f;
+  font-size: 2.2em;
+  color: #b03b8c;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #b03b8c;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f9cce7;
+  padding-bottom: 5px;
+  font-size: 1.5em;
 }
 
 .ciclo {
-  background: #ffffffcc;
-  border-left: 6px solid #ec407a;
-  border-radius: 12px;
-  padding: 1rem 1.5rem;
-  margin: 2rem auto;
-  width: 100%;
-  max-width: 800px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.ciclo h2 {
-  font-size: 1.5rem;
-  color: #ad1457;
-  margin-bottom: 1rem;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff8fb;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(176, 59, 140, 0.1);
 }
 
 .cursos {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 10px;
 }
 
 .boton-curso {
-  background-color: #f8bbd0;
+  background-color: #f9cce7; /* rosa pastel */
   border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  color: #4a148c;
+  padding: 12px 16px;
+  font-size: 0.95em;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  transition: all 0.3s ease;
+  color: #4b2840;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  min-width: 180px;
+  text-align: center;
 }
 
-.boton-curso.aprobado {
-  background-color: #ce93d8;
-  text-decoration: line-through;
+.boton-curso:hover {
+  background-color: #f5a8d0;
 }
 
 .boton-curso:disabled {
-  opacity: 0.5;
+  background-color: #f0e0ea;
+  color: #a3889a;
   cursor: not-allowed;
+  text-decoration: none;
+}
+
+.boton-curso.aprobado {
+  background-color: #d6a4ec; /* morado pastel */
+  text-decoration: line-through;
+  color: white;
 }
