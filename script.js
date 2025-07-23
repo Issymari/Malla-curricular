@@ -17,107 +17,116 @@ const ciclos = [
     cursos: [
       "Comunicación y Literatura I",
       "Análisis de Datos",
-      "Neurociencia I",
-      "Psicología del Desarrollo I",
-      "Psicología Cognitiva",
-      "Psicología General",
-      "Ética Profesional",
-      "Taller: Desarrollo de Competencias Personales II"
+      "Matemática para Ciencias Sociales",
+      "Psicología del Desarrollo Humano I",
+      "Neurociencias I",
+      "Fundamentos de Marketing",
+      "Electivo I",
+      "Taller: Desarrollo de Competencias Personales I"
     ]
   },
   {
     nombre: "Ciclo 3",
     cursos: [
-      "Psicología del Desarrollo II",
+      "Comunicación y Literatura II",
+      "Ética y Deontología Psicológica",
       "Neurociencia II",
-      "Psicología de la Motivación",
-      "Psicometría",
-      "Teorías de la Personalidad",
-      "Evaluación Psicológica I",
-      "Investigación Cuantitativa",
+      "Psicología Cognitiva y del Aprendizaje",
+      "Psicología de la Personalidad",
+      "Psicología del Desarrollo Humano II",
+      "Estadística y Probabilidades",
       "Taller: Desarrollo de Competencias Personales III"
     ]
   },
   {
     nombre: "Ciclo 4",
     cursos: [
+      "Psicología Educativa",
+      "Psicología Clínica",
+      "Psicología Organizacional",
       "Psicología Social",
-      "Evaluación Psicológica II",
-      "Psicología del Aprendizaje",
-      "Psicopatología",
-      "Psicología de Grupos",
-      "Investigación Cualitativa",
-      "Taller de Integración I",
-      "Taller: Desarrollo de Competencias Personales IV"
+      "Comportamiento Humano en las Organizaciones",
+      "Procesos Creativos",
+      "Electivo II",
+      "Taller: Desarrollo de Competencias Personales II"
     ]
   },
   {
     nombre: "Ciclo 5",
     cursos: [
-      "Psicología Educacional",
-      "Psicoterapia I",
-      "Psicología Organizacional",
-      "Psicología de la Salud",
-      "Diagnóstico Psicológico",
-      "Taller de Integración II",
-      "Ética y Legislación en Psicología",
-      "Taller: Desarrollo de Competencias Personales V"
+      "Filosofía y Ética",
+      "Interculturalidad, Diversidad y Psicología",
+      "Percepción y Comunicación",
+      "Comportamiento del Consumidor",
+      "Gestión de Capital Humano",
+      "Contabilidad General",
+      "Metodología de la Investigación",
     ]
   },
   {
     nombre: "Ciclo 6",
     cursos: [
-      "Intervención Psicológica en Educación",
-      "Psicoterapia II",
-      "Consultoría y Coaching",
-      "Promoción de la Salud Mental",
-      "Taller de Integración III",
-      "Práctica Preprofesional I",
-      "Electivo I",
-      "Electivo II"
+      "Teorías Psicodinámicas",
+      "Teoría de la Motivación y Emoción",
+      "Técnicas de Observación y Entrevista Psicológica",
+      "Procesos Psicopatológicos",
+      "Psicología Humanista y Existencialista",
+      "Electivo III",
+      "Electivo IV",
+      "Taller: Desarrollo de Competencias Profesionales III"
     ]
   },
   {
     nombre: "Ciclo 7",
     cursos: [
-      "Supervisión de Casos Clínicos",
-      "Evaluación e Intervención en Crisis",
-      "Gestión de Proyectos Sociales",
-      "Práctica Preprofesional II",
-      "Seminario de Tesis I",
-      "Electivo III",
-      "Electivo IV"
+      "Positive and Health Psychology",
+      "Investigación Cualitativa",
+      "Principios de Evaluación, Pruebas de Inteligencia y de procesos cognitivos",
+      "Familia: Modelos teóricos y áreas de intervención",
+      "Electivo V",
+      "Electivo VI",
+      "Estadística Inferencial",
+      "Taller: Desarrollo de Competencias Personales IV"
     ]
   },
   {
     nombre: "Ciclo 8",
     cursos: [
-      "Psicología Forense",
-      "Intervención en Emergencias y Desastres",
-      "Psicología Comunitaria",
-      "Seminario de Tesis II",
-      "Práctica Preprofesional III",
-      "Electivo V",
-      "Electivo VI"
+      "Investigación Cuantitativa",
+      "Pruebas de Personalidad y Constructos del Yo",
+      "Análisis de Datos II",
+      "Planeación Estratégica",
+      "Electivo VII",
+      "Electivo VIII",
+      "Electivo IX",
+      "Electivo I Internacional",
+      "Taller: Desarrollo de Competencias Profesionales IV"
     ]
   },
   {
     nombre: "Ciclo 9",
     cursos: [
-      "Psicología del Consumidor",
-      "Terapias Cognitivo Conductuales",
-      "Evaluación de Programas",
-      "Práctica Preprofesional IV",
-      "Electivo VII",
-      "Electivo VIII"
+      "Intervención psicológica en Emergencias y Desastres",
+      "Construcción y Adaptación de Pruebas",
+      "Práctica Preprofesional I",
+      "Trabajo de Tesis I",
+      "Electivo X",
+      "Electivo XI",
+      "Electivo II Internacional",
+      "Taller: Desarrollo de Competencias Personales V"
     ]
   },
   {
     nombre: "Ciclo 10",
     cursos: [
-      "Internado",
-      "Electivo IX",
-      "Electivo X"
+      "Programas de Promoción y Prevención para el Bienestar Humano",
+      "Salud Mental Comunitaria, Consejería e Intervención Psicológica",
+      "Entrepreneurship",
+      "Práctica Preprofesional II",
+      "Trabajo de Tesis II",
+      "Electivo XII",
+      "Electivo XIII",
+      "Taller: Desarrollo de competencias profesionales V"
     ]
   }
 ];
