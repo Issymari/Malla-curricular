@@ -25,12 +25,12 @@ h1 {
 }
 
 .boton-curso {
-  background-color: #f9d3e3; /* rosa pastel */
+  background-color: #f9d3e3;
   color: #5a2a55;
   font-family: 'Segoe UI', sans-serif;
   font-size: 15px;
   border: none;
-  border-radius: 999px; /* forma de burbuja */
+  border-radius: 999px;
   padding: 12px 20px;
   margin: 8px;
   cursor: pointer;
