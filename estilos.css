@@ -1,24 +1,57 @@
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #fce4ec, #f8bbd0);
+  color: #4a148c;
+  padding: 2rem;
 }
+
 h1 {
-    text-align: center;
-    color: #4a7ebB;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #880e4f;
 }
+
 .ciclo {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 15px 0;
-    background-color: white;
+  background: #ffffffcc;
+  border-left: 6px solid #ec407a;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .ciclo h2 {
-    color: #4a7ebb;
+  font-size: 1.5rem;
+  color: #ad1457;
+  margin-bottom: 1rem;
 }
-.curso {
-    margin-left: 20px;
-    padding: 4px 0;
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.boton-curso {
+  background-color: #f8bbd0;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #4a148c;
+  cursor: pointer;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.boton-curso.aprobado {
+  background-color: #ce93d8;
+  text-decoration: line-through;
+}
+
+.boton-curso:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
