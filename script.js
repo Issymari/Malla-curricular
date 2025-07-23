@@ -1,91 +1,114 @@
-const malla = document.getElementById("malla");
-
-const cursosPorCiclo = {
-    "Ciclo 1": [
-        "Globalización y Realidad Nacional", "Ciudadanía y Ética", "Antropología Social",
-        "Pensamiento Crítico", "Pre Cálculo", "Psicología: Historia y Sistemas",
-        "Administración General", "Taller: Desarrollo de Competencias Personales I"
-    ],
-    "Ciclo 2": [
-        "Comunicación y Literatura I", "Análisis de Datos I", "Matemática para Ciencias Sociales",
-        "Psicología del Desarrollo Humano I", "Neurociencias I", "Fundamentos de Marketing",
-        "Electivo I", "Taller: Desarrollo de Competencias Profesionales I"
-    ],
-    "Ciclo 3": [
-        "Comunicación y Literatura II", "Ética y Deontología Psicológica", "Neurociencias II",
-        "Psicología Cognitiva y del Aprendizaje", "Psicología de la Personalidad",
-        "Psicología del Desarrollo Humano II", "Estadística y Probabilidades",
-        "Taller: Desarrollo de Competencias Personales II"
-    ],
-    "Ciclo 4": [
-        "Psicología Educativa", "Psicología Clínica", "Psicología Organizacional",
-        "Psicología Social", "Comportamiento Humano en las Organizaciones",
-        "Procesos Creativos", "Electivo II", "Taller: Desarrollo de Competencias Profesionales II"
-    ],
-    "Ciclo 5": [
-        "Filosofía y Ética", "Interculturalidad, Diversidad y Psicología", "Percepción y Comunicación",
-        "Comportamiento del Consumidor", "Gestión de Capital Humano", "Contabilidad General",
-        "Metodología de la Investigación"
-    ],
-    "Ciclo 6": [
-        "Teorías Psicodinámicas", "Teoría de la Motivación y Emoción", "Técnicas de Observación y Entrevista Psicológica",
-        "Procesos Psicopatológicos", "Psicología Humanista y Existencialista", "Electivo III", "Electivo IV",
-        "Taller: Desarrollo de Competencias Profesionales III"
-    ],
-    "Ciclo 7": [
-        "Positive and Health Psychology", "Investigación Cualitativa", "Principios de Evaluación, Pruebas de Inteligencia y de procesos cognitivos",
-        "Familia: Modelos teóricos y áreas de intervención", "Electivo V", "Electivo VI",
-        "Estadística Inferencial", "Taller: Desarrollo de Competencias Personales IV"
-    ],
-    "Ciclo 8": [
-        "Investigación Cuantitativa", "Pruebas de Personalidad y Constructos del Yo", "Análisis de Datos II",
-        "Planeación Estratégica", "Electivo VII", "Electivo VIII", "Electivo IX",
-        "Electivo I Internacional", "Taller: Desarrollo de Competencias Profesionales IV"
-    ],
-    "Ciclo 9": [
-        "Intervención psicológica en Emergencias y Desastres", "Construcción y Adaptación de Pruebas",
-        "Práctica Preprofesional I", "Trabajo de Tesis I", "Electivo X", "Electivo XI",
-        "Electivo II Internacional", "Taller: Desarrollo de Competencias Personales V"
-    ],
-    "Ciclo 10": [
-        "Programas de Promoción y Prevención para el Bienestar Humano",
-        "Salud Mental Comunitaria, Consejería e Intervención Psicológica", "Entrepreneurship",
-        "Práctica Preprofesional II", "Trabajo de Tesis II", "Electivo XII", "Electivo XIII",
-        "Taller: Desarrollo de competencias profesionales V"
+const ciclos = [
+  {
+    nombre: "Ciclo 1",
+    cursos: [
+      "Globalización y Realidad Nacional",
+      "Ciudadanía y Ética",
+      "Antropología Social",
+      "Pensamiento Crítico",
+      "Pre Cálculo",
+      "Psicología: Historia y Sistemas",
+      "Administración General",
+      "Taller: Desarrollo de Competencias Personales I"
     ]
-};
+  },
+  {
+    nombre: "Ciclo 2",
+    cursos: [
+      "Comunicación y Literatura I",
+      "Análisis de Datos",
+      "Neurociencia I",
+      "Psicología del Desarrollo I",
+      "Psicología Cognitiva",
+      "Psicología General",
+      "Ética Profesional",
+      "Taller: Desarrollo de Competencias Personales II"
+    ]
+  },
+  {
+    nombre: "Ciclo 3",
+    cursos: [
+      "Psicología del Desarrollo II",
+      "Neurociencia II",
+      "Psicología de la Motivación",
+      "Psicometría",
+      "Teorías de la Personalidad",
+      "Evaluación Psicológica I",
+      "Investigación Cuantitativa",
+      "Taller: Desarrollo de Competencias Personales III"
+    ]
+  }
+];
 
-Object.entries(cursosPorCiclo).forEach(([ciclo, cursos]) => {
-    const div = document.createElement("div");
-    div.className = "ciclo";
+const contenedor = document.getElementById('contenedor');
 
-    const title = document.createElement("h2");
-    title.textContent = ciclo;
-    div.appendChild(title);
+ciclos.forEach((ciclo, i) => {
+  const div = document.createElement('div');
+  div.className = 'ciclo';
 
-    cursos.forEach((curso, i) => {
-        const p = document.createElement("p");
-        p.className = "curso";
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
+  const titulo = document.createElement('h2');
+  titulo.textContent = ciclo.nombre;
+  div.appendChild(titulo);
 
-        if (i >= cursos.length - 2) {
-            checkbox.disabled = true;
-        }
+  const cursoContenedor = document.createElement('div');
+  cursoContenedor.className = 'cursos';
 
-        checkbox.addEventListener("change", () => {
-            const checkboxes = div.querySelectorAll("input[type=checkbox]");
-            const completos = [...checkboxes].slice(0, cursos.length - 2).every(cb => cb.checked);
-            for (let j = cursos.length - 2; j < cursos.length; j++) {
-                checkboxes[j].disabled = !completos;
-                if (!completos) checkboxes[j].checked = false;
-            }
-        });
+  ciclo.cursos.forEach((curso, j) => {
+    const boton = document.createElement('button');
+    boton.className = 'boton-curso';
+    boton.textContent = curso;
 
-        p.appendChild(checkbox);
-        p.append(" " + curso);
-        div.appendChild(p);
+    // Bloquea últimos 2 si no completaste todos los anteriores del ciclo anterior
+    if (j >= ciclo.cursos.length - 2 && i !== 0) {
+      boton.disabled = true;
+    }
+
+    boton.addEventListener('click', () => {
+      boton.classList.toggle('aprobado');
+      guardarEstado();
+      desbloquearCiclo(i + 1);
     });
 
-    malla.appendChild(div);
+    cursoContenedor.appendChild(boton);
+  });
+
+  div.appendChild(cursoContenedor);
+  contenedor.appendChild(div);
 });
+
+function desbloquearCiclo(index) {
+  const ciclo = document.querySelectorAll('.ciclo')[index];
+  if (!ciclo) return;
+
+  const botones = ciclo.querySelectorAll('.boton-curso');
+  const anteriores = document.querySelectorAll('.ciclo')[index - 1].querySelectorAll('.boton-curso:not(.aprobado)');
+
+  if (anteriores.length === 0) {
+    for (let i = botones.length - 2; i < botones.length; i++) {
+      botones[i].disabled = false;
+    }
+  }
+}
+
+function guardarEstado() {
+  const estados = [];
+  document.querySelectorAll('.boton-curso').forEach(btn => {
+    estados.push(btn.classList.contains('aprobado'));
+  });
+  localStorage.setItem('cursosAprobados', JSON.stringify(estados));
+}
+
+function cargarEstado() {
+  const estados = JSON.parse(localStorage.getItem('cursosAprobados') || "[]");
+  const botones = document.querySelectorAll('.boton-curso');
+  estados.forEach((aprobado, i) => {
+    if (aprobado) {
+      botones[i].classList.add('aprobado');
+    }
+  });
+  for (let i = 1; i < ciclos.length; i++) {
+    desbloquearCiclo(i);
+  }
+}
+
+cargarEstado();
