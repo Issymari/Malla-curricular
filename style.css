@@ -25,21 +25,32 @@ h1 {
 }
 
 .boton-curso {
-  background-color: #ffc0cb;
+  background-color: #f9d3e3; /* rosa pastel */
+  color: #5a2a55;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
   border: none;
-  padding: 10px;
-  border-radius: 10px;
+  border-radius: 999px; /* forma de burbuja */
+  padding: 12px 20px;
+  margin: 8px;
   cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  display: inline-block;
+  position: relative;
 }
 
 .boton-curso:hover {
-  background-color: #ffb6c1;
+  background-color: #f7b9d3;
+  transform: translateY(-2px) scale(1.05); /* pequeño rebote */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
 .boton-curso.aprobado {
-  background-color: #dda0dd;
-  text-decoration: line-through;
+  background-color: #d5a8e5; /* morado pastel */
   color: white;
+  text-decoration: line-through;
+  font-weight: bold;
+  transform: scale(1);
+  box-shadow: 0 6px 14px rgba(103, 58, 183, 0.3);
 }
