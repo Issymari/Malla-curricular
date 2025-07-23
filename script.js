@@ -60,7 +60,7 @@ const ciclos = [
       "Comportamiento del Consumidor",
       "Gestión de Capital Humano",
       "Contabilidad General",
-      "Metodología de la Investigación",
+      "Metodología de la Investigación"
     ]
   },
   {
