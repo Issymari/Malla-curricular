@@ -41,92 +41,83 @@ const ciclos = [
   {
     nombre: "Ciclo 4",
     cursos: [
-      "Investigación Cualitativa",
-      "Evaluación Psicológica II",
-      "Psicopatología",
       "Psicología Social",
-      "Psicología de la Percepción",
-      "Psicología Educacional",
-      "Taller de Herramientas Digitales",
+      "Evaluación Psicológica II",
+      "Psicología del Aprendizaje",
+      "Psicopatología",
+      "Psicología de Grupos",
+      "Investigación Cualitativa",
+      "Taller de Integración I",
       "Taller: Desarrollo de Competencias Personales IV"
     ]
   },
   {
     nombre: "Ciclo 5",
     cursos: [
-      "Psicoterapia Cognitivo Conductual",
-      "Psicología Comunitaria",
-      "Neuropsicología",
-      "Psicología de la Personalidad II",
-      "Psicología Clínica I",
-      "Taller de Entrevista Psicológica",
-      "Práctica Pre Profesional I",
+      "Psicología Educacional",
+      "Psicoterapia I",
+      "Psicología Organizacional",
+      "Psicología de la Salud",
+      "Diagnóstico Psicológico",
+      "Taller de Integración II",
+      "Ética y Legislación en Psicología",
       "Taller: Desarrollo de Competencias Personales V"
     ]
   },
   {
     nombre: "Ciclo 6",
     cursos: [
-      "Psicología Clínica II",
-      "Psicología Organizacional",
-      "Psicología de la Salud",
-      "Psicología Jurídica",
-      "Taller de Evaluación Psicológica",
-      "Intervención Psicológica en Crisis",
-      "Práctica Pre Profesional II",
-      "Taller: Desarrollo de Competencias Personales VI"
+      "Intervención Psicológica en Educación",
+      "Psicoterapia II",
+      "Consultoría y Coaching",
+      "Promoción de la Salud Mental",
+      "Taller de Integración III",
+      "Práctica Preprofesional I",
+      "Electivo I",
+      "Electivo II"
     ]
   },
   {
     nombre: "Ciclo 7",
     cursos: [
-      "Taller de Psicoterapia",
-      "Taller de Casos Clínicos",
-      "Psicología del Trabajo",
-      "Intervención Psicológica Comunitaria",
-      "Supervisión Profesional",
-      "Electivo I",
-      "Práctica Pre Profesional III",
-      "Seminario de Investigación I"
+      "Supervisión de Casos Clínicos",
+      "Evaluación e Intervención en Crisis",
+      "Gestión de Proyectos Sociales",
+      "Práctica Preprofesional II",
+      "Seminario de Tesis I",
+      "Electivo III",
+      "Electivo IV"
     ]
   },
   {
     nombre: "Ciclo 8",
     cursos: [
-      "Psicología del Consumidor",
-      "Intervención Educativa",
-      "Psicología Escolar",
-      "Psicología Política",
-      "Gestión del Talento Humano",
-      "Electivo II",
-      "Práctica Pre Profesional IV",
-      "Seminario de Investigación II"
+      "Psicología Forense",
+      "Intervención en Emergencias y Desastres",
+      "Psicología Comunitaria",
+      "Seminario de Tesis II",
+      "Práctica Preprofesional III",
+      "Electivo V",
+      "Electivo VI"
     ]
   },
   {
     nombre: "Ciclo 9",
     cursos: [
-      "Evaluación de Proyectos Psicológicos",
-      "Psicología del Desarrollo Adulto y Vejez",
-      "Psicología Ambiental",
-      "Electivo III",
-      "Supervisión Clínica",
-      "Electivo IV",
-      "Práctica Pre Profesional V",
-      "Taller de Cierre Profesional"
+      "Psicología del Consumidor",
+      "Terapias Cognitivo Conductuales",
+      "Evaluación de Programas",
+      "Práctica Preprofesional IV",
+      "Electivo VII",
+      "Electivo VIII"
     ]
   },
   {
     nombre: "Ciclo 10",
     cursos: [
-      "Internado Psicológico I",
-      "Internado Psicológico II",
-      "Internado Psicológico III",
-      "Internado Psicológico IV",
-      "Internado Psicológico V",
-      "Internado Psicológico VI",
-      "Trabajo Final de Carrera I",
-      "Trabajo Final de Carrera II"
+      "Internado",
+      "Electivo IX",
+      "Electivo X"
     ]
   }
 ];
