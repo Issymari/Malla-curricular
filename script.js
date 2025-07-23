@@ -16,7 +16,7 @@ const ciclos = [
     nombre: "Ciclo 2",
     cursos: [
       "Comunicación y Literatura I",
-      "Análisis de Datos",
+      "Análisis de Datos I",
       "Matemática para Ciencias Sociales",
       "Psicología del Desarrollo Humano I",
       "Neurociencias I",
