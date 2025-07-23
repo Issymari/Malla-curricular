@@ -35,7 +35,7 @@ const ciclos = [
       "Psicología de la Personalidad",
       "Psicología del Desarrollo Humano II",
       "Estadística y Probabilidades",
-      "Taller: Desarrollo de Competencias Personales III"
+      "Taller: Desarrollo de Competencias Personales II"
     ]
   },
   {
